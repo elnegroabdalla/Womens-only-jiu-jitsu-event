@@ -1,0 +1,26 @@
+.DS_Store
+Thumbs.db
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# OS / editor
+.vscode/
+.idea/
+*.log
+.env
+.env.local
+.env.*
+
+# Build
+dist/
+build/
+.cache/
+
+# Misc
+*.bak
+*.tmp
+.DS_Store
