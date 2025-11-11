@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Jiu Jitsu Event</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Jiu<span>Jitsu</span></a>
+        <i class="fa fa-bars menu-toggle" id="menu-toggle"></i>
+        <ul class="Nav" id="Nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="Banner">
+        <div class="content">
+            <h2>Come Join Us!</h2>
+            <p>For a women's only jiu jitsu event</p>
+            <a href="contact.html" class="cta-button">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community</h3>
+                <p>Connect with women from all backgrounds and skill levels in a supportive environment</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Training</h3>
+                <p>Learn from experienced instructors and develop your jiu jitsu skills</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Empowerment</h3>
+                <p>Build confidence and strength through the art of Brazilian Jiu Jitsu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="why-container">
+            <div class="why-content">
+                <h2>Why Choose Our Event?</h2>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> Women-only training environment</li>
+                    <li><i class="fas fa-check-circle"></i> Expert instructors with years of experience</li>
+                    <li><i class="fas fa-check-circle"></i> Classes for all skill levels</li>
+                    <li><i class="fas fa-check-circle"></i> Welcoming and supportive community</li>
+                    <li><i class="fas fa-check-circle"></i> Multiple locations</li>
+                    <li><i class="fas fa-check-circle"></i> Professional facilities</li>
+                </ul>
+                <a href="about.html" class="learn-more-btn">Learn More</a>
+            </div>
+            <div class="why-image">
+                <img src="http://wombatwrestling.files.wordpress.com/2011/11/297285_316339101714762_192240324124641_1495220_1924382721_n.jpg" alt="Training">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"This event changed my life! The supportive community and expert instructors made all the difference in my jiu jitsu journey."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Incredibly welcoming atmosphere! I felt comfortable learning new techniques in a women-only environment. Highly recommended!"</p>
+                <h4>- Jessica L.</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The instructors are fantastic and the curriculum is well-structured. Perfect for beginners and advanced practitioners alike!"</p>
+                <h4>- Amanda T.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join our community of strong, empowered women today</p>
+        <a href="contact.html" class="cta-button-large">Get In Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Women's Jiu Jitsu Event. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('Nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.Nav li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
